@@ -2,6 +2,16 @@ import os
 import time
 from ftplib import FTP
 
+"""
+script for donwloading PRISM data via ftp
+(http://prism.oregonstate.edu/)
+
+adjust the subdirs to include the variables you want to download
+adjust the years range() to include the years you want to download
+specify destination directory. This is the root local directory that the
+data will be downloaded to.
+"""
+
 destination_directory = "D:/prism_data"
 
 ftp = FTP("prism.nacse.org")
